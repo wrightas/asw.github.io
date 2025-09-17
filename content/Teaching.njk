@@ -1,0 +1,12 @@
+---
+layout: layouts/base.njk
+eleventyNavigation:
+  key: Teaching
+  order: 3
+---
+<h1>Teaching</h1>
+
+Here you can find some of the courses I have taught and lectured in, and other pedagogy-related things.
+
+{% set postslist = collections.teaching %}
+{% include "postslist.njk" %}

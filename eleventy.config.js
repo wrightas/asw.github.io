@@ -16,7 +16,8 @@ module.exports = function(eleventyConfig) {
 	// For example, `./public/css/` ends up in `_site/css/`
 	eleventyConfig.addPassthroughCopy({
 		"./public/": "/",
-		"./node_modules/prismjs/themes/prism-okaidia.css": "/css/prism-okaidia.css"
+		"./node_modules/prismjs/themes/prism-okaidia.css": "/css/prism-okaidia.css",
+		"./public/img/favicons": "/"
 	});
 
 	// Run Eleventy when these files change:
@@ -37,6 +38,15 @@ module.exports = function(eleventyConfig) {
 	eleventyConfig.addPlugin(pluginNavigation);
 	eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
 	eleventyConfig.addPlugin(pluginBundle);
+
+	//Added manually
+	//add css
+	module.exports = function(eleventyConfig) {
+		eleventyConfig.addBundle("css");
+	};
+	module.exports = function(eleventyConfig) {
+		eleventyConfig.addBundle("svg");
+	};
 
 	// Filters
 	eleventyConfig.addFilter("readableDate", (dateObj, format, zone) => {

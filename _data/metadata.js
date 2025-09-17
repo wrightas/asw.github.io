@@ -1,6 +1,6 @@
 module.exports = {
-	title: "Eleventy Base Blog v8",
-	url: "https://example.com/",
+	title: "Aaron Sidney Wright, PhD",
+	url: "https://aaronswright.com/",
 	language: "en",
 	description: "Personal website",
 	author: {

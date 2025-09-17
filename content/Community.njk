@@ -1,0 +1,12 @@
+---
+layout: layouts/base.njk
+eleventyNavigation:
+  key: Community
+  order: 4
+---
+<h1>Community</h1>
+
+This page collects various projects I'm engaged with on campus and beyond.
+
+{% set postslist = collections.community %}
+{% include "postslist.njk" %}
