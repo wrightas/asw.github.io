@@ -39,6 +39,15 @@ module.exports = function(eleventyConfig) {
 	eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
 	eleventyConfig.addPlugin(pluginBundle);
 
+	//Upgrade Helper v2 --> v3 Sept 2025
+	/*
+	const UpgradeHelper = require("@11ty/eleventy-upgrade-help");
+
+	module.exports = function (eleventyConfig) {
+		// If you have other `addPlugin` calls, it’s important that UpgradeHelper is added last.
+		eleventyConfig.addPlugin(UpgradeHelper);
+	};
+	*/
 	//Added manually
 	//add css
 	module.exports = function(eleventyConfig) {
